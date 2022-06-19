@@ -1,0 +1,3 @@
+<!-- <web-view src="https://mp.weixin.qq.com/s/Q"></web-view> -->
+<rich-text nodes="{{content}}"></rich-text>
+<view wx:if='{{!content}}'>等多几秒......再不行就加载失败，试试退出重进吧~~</view>

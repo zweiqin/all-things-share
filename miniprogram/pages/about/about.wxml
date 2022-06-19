@@ -1,0 +1,34 @@
+<view class="title">开发：</view>
+<view class="main">
+  <view class="image">
+    <view class="txt" wx:for="{{imgs1}}" wx:key="{{index}}">
+      <image class="im" src="{{item.url}}" data-id="{{index}}"></image>
+      <view class="t">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+<view class="contain">
+  <view class="title">程序简介</view>
+  <view class="description">
+    <text space="emsp" decode="{{ true }}">{{des}}</text>
+  </view>
+  <view class="title">赞赏作者</view>
+  <view class="description">
+    <view class='imagesize'>
+      <image src="{{htmltextReward}}" class='in-image' bindtap="img" />
+    </view>
+  </view>
+  <view class="title">联系方式</view>
+  <view class="description">
+    <view class="tip" bindtap="copy" data-copy="敬请期待......" data-name="期待">
+      <view>公众号</view>
+      :
+      <text>敬请期待......</text>
+    </view>
+    <view class="tip" bindtap="copy" data-copy="1836832455" data-name="QQ">
+      <view>QQ</view>
+      :
+      <text>1836832455</text>
+    </view>
+  </view>
+</view>

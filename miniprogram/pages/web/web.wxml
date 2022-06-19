@@ -1,0 +1,3 @@
+<!-- <web-view src="{{url}}"></web-view> -->
+<rich-text nodes="{{content}}"></rich-text>
+<view wx:if='{{!content}}'>Hello!</view>
